@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    background-image: url(Background.webp);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    background-color: white;
+    width: 90%;
+    max-width: 550px;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Fieldset dan legend */
+fieldset {
+    margin: 0;
+    padding: 1.5em 2em;
+    border: solid 1px #ccc;
+    border-radius: 8px;
+    min-width: 200px;
+}
+
+/* Legend */
+legend {
+    font-size: 1.25em;
+    padding: 0 .5em;
+    color: #555;
+}
+
+/* Labels */
+label {
+    display: block;
+    margin-top: 1em;
+}
+
+.checks label {
+    margin-top: 0;
+}
+
+label:first-of-type {
+    margin-top: 0;
+}
+
+/* Input dan textarea */
+input {
+    padding: .5em;
+    border: solid 1px #999;
+    border-radius: 4px;
+}
+
+input[type="email"],
+input[type="text"],
+input[type="password"],
+select {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+textarea {
+    min-height: 8em;
+    width: 100%;
+    box-sizing: border-box;
+    padding: .5em;
+    border: solid 1px #999;
+    border-radius: 4px;
+}
+
+/* Radio buttons dan checkbox */
+.checks {
+    margin-bottom: 1em;
+}
+
+.checks p {
+    margin-bottom: 0.5em;
+}
+
+/* Submit Button */
+input[type="submit"] {
+    padding: .6em 1.2em;
+    border: none;
+    border-radius: 6px;
+    background-color: #333;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-size: .9em;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #555;
+}
+
+@media screen and (min-width: 430px) {
+    legend {
+        font-size: 1.75em;
+    }
+
+    .checks label {
+        display: inline-block;
+        padding-top: .5em;
+        margin-top: 0;
+        margin-right: .5em;
+    }
+}
+
+button {
+    width: 30px;
+    height: auto;
+    font-size: 20px;
+}
+
